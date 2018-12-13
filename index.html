@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
 
@@ -12,7 +14,7 @@
         <ul class="top-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="contact_link" href="#">Contact</a></li>
             <li><a href="#">About</a></li>
         </ul>
     </nav>
@@ -26,33 +28,190 @@
         <p>Try grilling fritters marinateed with condensed milk, varnished with mustard.</p>
     </article>
     <article>
-         <h2 class="title">Scrape chickpeas </h2>
+        <h2 class="title">Scrape chickpeas </h2>
         <p>Demolitiones accelerare, tanquam ferox contencio.</p>
         <p>Landlubbers are the waves of the black malaria.</p>
         <p>Try grilling fritters marinateed with condensed milk, varnished with mustard.</p>
     </article>
     <article>
-         <h2 class="title">Scrape chickpeas </h2>
+        <h2 class="title">Scrape chickpeas </h2>
         <p>Demolitiones accelerare, tanquam ferox contencio.</p>
         <p>Landlubbers are the waves of the black malaria.</p>
         <p>Try grilling fritters marinateed with condensed milk, varnished with mustard.</p>
     </article>
     <article>
-         <h2 class="title">Scrape chickpeas </h2>
+        <h2 class="title">Scrape chickpeas </h2>
         <p>Demolitiones accelerare, tanquam ferox contencio.</p>
         <p>Landlubbers are the waves of the black malaria.</p>
         <p>Try grilling fritters marinateed with condensed milk, varnished with mustard.</p></article>
     <article>
-         <h2 class="title">Scrape chickpeas </h2>
+        <h2 class="title">Scrape chickpeas </h2>
         <p>Demolitiones accelerare, tanquam ferox contencio.</p>
         <p>Landlubbers are the waves of the black malaria.</p>
         <p>Try grilling fritters marinateed with condensed milk, varnished with mustard.</p>
     </article>
 </section>
 
-<footer>
+<section class="pictures">
+    <img src="./img/download.jpg">
+    <img src="./img/rsz_1computer_memory_dimm.jpg">
+    <img src="./img/download.jpg">
+</section>
 
+<footer style="width: 100%; min-height: 200px;">
+<aside style="width: 33%; height: 100%">
+    <table>
+        <tr>
+            <th>
+                Admin:
+            </th>
+            <th>
+                Phone number:
+            </th>
+        </tr>
+        <tr>
+            <td>Andrew</td>
+            <td>266666666</td>
+        </tr>
+        <tr>
+            <td>Eugene</td>
+            <td>27777777</td>
+        </tr>
+        <tr>
+            <td>Eugene</td>
+            <td>28888888</td>
+        </tr>
+    </table>
+</aside>
 </footer>
 
+<div class="modal" id="contact_modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Leave your contacts</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form>
+                        <ul class="flex-outer">
+                            <li>
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" placeholder="Enter your first name here">
+                            </li>
+                            <li>
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" placeholder="Enter your last name here">
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Enter your email here">
+                            </li>
+                            <li>
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" placeholder="Enter your phone here">
+                            </li>
+
+                            <li>
+                                <label for="gender">Gender</label>
+                                <select name="gender" id="gender">
+                                    <option value="0">-</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <label for="secret_key">Secret key</label>
+                                <input type="password" id="secret_key" placeholder="Enter your secret key">
+                            </li>
+
+                            <li>
+                                <label for="message">Message</label>
+                                <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                            </li>
+                            <li>
+                                <p>Age</p>
+                                <ul class="flex-inner">
+                                    <li>
+                                        <input type="checkbox" id="twenty-to-twentynine">
+                                        <label for="twenty-to-twentynine">20-29</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="thirty-to-thirtynine">
+                                        <label for="thirty-to-thirtynine">30-39</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="fourty-to-fourtynine">
+                                        <label for="fourty-to-fourtynine">40-49</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="fifty-to-fiftynine">
+                                        <label for="fifty-to-fiftynine">50-59</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="sixty-to-sixtynine">
+                                        <label for="sixty-to-sixtynine">60-69</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="other">
+                                        <label for="other">Other</label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>Region</p>
+                                <fieldset>
+                                    <legend>Latvia</legend>
+                                    <ul class="flex-inner">
+                                        <li>
+                                            <input type="radio" name="group1" id="region_vidzeme">
+                                            <label for="region_vidzeme">Vidzeme</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group1" id="region_latgale">
+                                            <label for="region_latgale">Vidzeme</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group1" id="region_kurzeme">
+                                            <label for="region_kurzeme">Kurzeme</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group1" id="region_zemgale">
+                                        <label for="region_zemgale">Zemgale</label>
+                                        </li>
+                                    </ul>
+                                    </fieldset>
+                            </li>
+
+                            <li>
+                                <button type="submit">Submit</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        $(document).ready(function (e) {
+            $('.contact_link').click(function (e) {
+                console.log('Here');
+                $('#contact_modal').modal();
+            });
+        })
+    </script>
 </body>
 </html>
