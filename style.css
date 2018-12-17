@@ -31,7 +31,7 @@ header nav ul.top-nav > li a {
   color: whitesmoke;
 }
 
-section.articles {
+article.articles {
   display: flex;
   flex-wrap: wrap;
   background: cornflowerblue;
@@ -39,13 +39,13 @@ section.articles {
   align-items: flex-start;
   align-content: flex-start;
 }
-section.articles article {
+article.articles section {
   width: 33.3333333333%;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-section.pictures {
+article.pictures {
   display: flex;
   flex-wrap: wrap;
   background: antiquewhite;
@@ -53,7 +53,7 @@ section.pictures {
   align-items: flex-start;
   align-content: flex-start;
 }
-section.pictures img {
+article.pictures img {
   height: 300px;
   width: 33%;
 }

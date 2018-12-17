@@ -41,7 +41,7 @@ header nav {
 
 }
 
-section.articles {
+article.articles {
   display: flex;
   flex-wrap: wrap;
   background: cornflowerblue;
@@ -50,7 +50,7 @@ section.articles {
   align-content: flex-start;
   //justify-content: space-evenly;
 
-  article {
+  section {
     width: 33.3333333333%;
 
     padding : {
@@ -64,7 +64,7 @@ section.articles {
   }
 }
 
-section.pictures {
+article.pictures {
   img {
     height: 300px;
     width: 33%;
@@ -200,7 +200,6 @@ footer {
 
 
 footer {
-
   display: flex !important;
   flex: {
     direction: row-reverse;
